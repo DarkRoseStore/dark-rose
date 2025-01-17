@@ -1,45 +1,73 @@
 /* Seção principal */
 .categoriesSection {
-    @apply w-full p-8 bg-black text-white;
-  }
-  
-  /* Container principal */
-  .categoriesContainer {
-    @apply container mx-auto;
-  }
-  
-  /* Cabeçalho */
-  .categoriesHeader {
-    @apply mb-8 text-left;
-  }
-  .categoriesSubtitle {
-    @apply text-sm tracking-wider;
-  }
-  .categoriesTitle {
-    @apply text-3xl font-bold;
-  }
-  
-  /* Grid de categorias */
-  .categoriesGrid {
-    @apply flex flex-wrap justify-center gap-6;
-  }
-  
-  /* Cartões de categorias */
-  .categoryCard {
-    @apply text-center w-full sm:w-80 md:w-72 lg:w-96;
-  }
-  .categoryImage {
-    @apply rounded-lg mb-4 object-cover w-full h-48;
-  }
-  .categoryTitle {
-    @apply text-xl font-semibold mb-2;
-  }
-  
-  /* Botão */
-  .categoriesButtonContainer {
-    @apply flex justify-center mt-8;
-  }
-  .categoriesButton {
-    @apply bg-[#A92929] text-white py-3 px-8 rounded-lg shadow hover:bg-opacity-90 transition;
-  }
-  
+  @apply w-full p-8 bg-black text-white;
+}
+
+/* Container principal */
+.categoriesContainer {
+  @apply container mx-auto;
+}
+
+/* Cabeçalho */
+.categoriesHeader {
+  @apply mb-8 text-left;
+}
+
+.categoriesSubtitle {
+  @apply text-sm tracking-wider;
+}
+
+.categoriesTitle {
+  @apply text-3xl font-bold;
+}
+
+/* Carrossel de categorias */
+.categoriesCarousel {
+  @apply flex items-center justify-between;
+  position: relative; /* Para posicionamento dos botões */
+}
+
+/* Cartões de categorias */
+.categoryCard {
+  @apply text-center w-full sm:w-80 md:w-72 lg:w-96;
+}
+
+.categoryImage {
+  @apply rounded-lg mb-4 object-cover w-full h-48;
+}
+
+.categoryTitle {
+  @apply text-xl font-semibold mb-2;
+}
+
+/* Botões de navegação */
+.navButton {
+  @apply bg-white/80 text-[#A92929] p-2 rounded-full hover:bg-white transition;
+}
+
+/* Indicadores */
+.indicatorContainer {
+  @apply flex justify-center mt-4 md:mt-6 gap-2;
+}
+
+.indicatorDot {
+  @apply w-3 h-3 rounded-full bg-gray-500;
+}
+
+.indicatorDot.active {
+  @apply bg-white;
+}
+
+/* Botão */
+.categoriesButtonContainer {
+  @apply flex justify-center mt-8;
+}
+
+.categoriesButton {
+  @apply bg-[#A92929] text-white py-3 px-8 rounded-lg shadow hover:bg-opacity-90 transition;
+}
+
+/* Exibir a grade apenas em telas médias e grandes */
+.categoriesGrid {
+  @apply hidden md:flex md:flex-wrap justify-center gap-6;
+}

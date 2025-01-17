@@ -1,42 +1,54 @@
+/* Seção principal */
+.productsSection {
+  @apply w-full p-4 md:p-8 bg-black text-white;
+}
 
+/* Container dos produtos */
 .productsContainer {
-    @apply bg-cover bg-center w-full text-white px-4 py-8 md:px-8;
-    background-image: url('../../assets/images/background_products.jpg');
-    background-attachment: fixed;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
-  }
-  
+  @apply relative w-full h-auto rounded-lg p-4 md:p-8 flex items-center justify-between;
+}
 
-  .productsTitle {
-    @apply text-3xl font-bold text-center mb-6;
-  }
-  
+/* Botões de navegação */
+.navButton {
+  @apply bg-white/80 text-[#A92929] p-2 rounded-full hover:bg-white transition;
+}
 
-  .productsGrid {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
-  }
-  
+/* Conteúdo do produto */
+.productContent {
+  @apply flex flex-col items-center justify-center gap-4 w-full; /* Remover o flex-row do mobile */
+  @apply md:flex-row; /* Adicionar flex-row em telas maiores */
+}
 
-  .productCard {
-    @apply bg-white/10 rounded-lg shadow-md p-4 flex flex-col items-center text-center;
-    transition: transform 0.3s ease;
-  }
-  .productCard:hover {
-    transform: scale(1.05);
-  }
-  
+.productImage {
+  @apply w-full md:w-1/3 h-48 md:h-auto rounded-lg object-cover;
+}
 
-  .productImage {
-    @apply w-full h-40 object-cover rounded-lg mb-4;
-  }
-  
+.productDetails {
+  @apply text-left flex flex-col items-center; /* Centraliza o conteúdo no mobile */
+}
 
-  .productName {
-    @apply text-xl font-semibold mb-2;
-  }
-  
+.productName {
+  @apply text-2xl md:text-3xl font-semibold text-center; /* Centraliza o título */
+}
 
-  .productDescription {
-    @apply text-gray-300 text-sm;
-  }
-  
+.productDescription {
+  @apply text-gray-300 mt-2 md:mt-4 text-sm md:text-base max-w-md text-center; /* Centraliza a descrição */
+}
+
+/* Botão de "Ver Mais" */
+.viewMoreButton {
+  @apply mt-4 md:mt-6 bg-[#A92929] py-2 px-6 md:py-3 md:px-8 rounded-lg hover:bg-opacity-90 transition;
+}
+
+/* Indicadores */
+.indicatorContainer {
+  @apply flex justify-center mt-4 md:mt-6 gap-2;
+}
+
+.indicatorDot {
+  @apply w-3 h-3 rounded-full bg-gray-500;
+}
+
+.indicatorDot.active {
+  @apply bg-white;
+}
