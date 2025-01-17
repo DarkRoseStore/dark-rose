@@ -1,0 +1,31 @@
+/* Seção principal */
+.contactSection {
+    @apply bg-cover bg-center w-full h-[50vh] relative flex items-center justify-center;
+  }
+  
+  /* Conteúdo centralizado */
+  .contactContent {
+    @apply text-white text-center;
+  }
+  
+  /* Título principal */
+  .contactTitle {
+    @apply text-5xl font-bold mb-4;
+  }
+  
+  /* Ícones de contato */
+  .contactIcons {
+    @apply flex justify-center space-x-6;
+  }
+  
+  /* Estilo dos ícones individuais */
+  .icon {
+    @apply text-5xl transition;
+  }
+  .icon.instagram:hover {
+    @apply text-pink-600;
+  }
+  .icon.whatsapp:hover {
+    @apply text-green-600;
+  }
+  

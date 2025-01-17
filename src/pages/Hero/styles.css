@@ -1,0 +1,23 @@
+.heroContainer {
+    @apply bg-cover bg-center w-full h-[80vh] flex;
+
+    background-image: url('../../assets/images/background_hero.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+}
+
+.header{
+    @apply absolute top-10 left-5 text-white;
+}
+
+.headerTitle {
+    @apply text-4xl font-bold uppercase mt-2;
+}
+
+@media (min-width: 640px) {
+    .heroContainer {
+        @apply h-[90vh];
+    }
+}

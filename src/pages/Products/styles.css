@@ -1,0 +1,42 @@
+
+.productsContainer {
+    @apply bg-cover bg-center w-full text-white px-4 py-8 md:px-8;
+    background-image: url('../../assets/images/background_products.jpg');
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  }
+  
+
+  .productsTitle {
+    @apply text-3xl font-bold text-center mb-6;
+  }
+  
+
+  .productsGrid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6;
+  }
+  
+
+  .productCard {
+    @apply bg-white/10 rounded-lg shadow-md p-4 flex flex-col items-center text-center;
+    transition: transform 0.3s ease;
+  }
+  .productCard:hover {
+    transform: scale(1.05);
+  }
+  
+
+  .productImage {
+    @apply w-full h-40 object-cover rounded-lg mb-4;
+  }
+  
+
+  .productName {
+    @apply text-xl font-semibold mb-2;
+  }
+  
+
+  .productDescription {
+    @apply text-gray-300 text-sm;
+  }
+  

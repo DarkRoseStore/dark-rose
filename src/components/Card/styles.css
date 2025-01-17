@@ -1,0 +1,20 @@
+/* Container principal do card */
+.cardContainer {
+    @apply max-w-[400px] w-full bg-white p-4 rounded-lg shadow-lg cursor-pointer hover:scale-105 transform transition duration-300;
+  }
+  
+  /* Imagem do card */
+  .cardImage {
+    @apply h-48 w-full object-cover rounded;
+  }
+  
+  /* Nome do card */
+  .cardName {
+    @apply text-center text-2xl p-2 font-bold text-gray-700;
+  }
+  
+  /* Testemunho do card */
+  .cardTestimonial {
+    @apply text-center text-gray-600;
+  }
+  

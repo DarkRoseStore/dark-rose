@@ -1,3 +1,5 @@
+import "./styles.css";
+
 const NewReleaseBooks = () => {
   const books = [
     {
@@ -31,28 +33,28 @@ const NewReleaseBooks = () => {
   ];
 
   return (
-    <div className="w-full p-8 bg-black">
-      <div className="container mx-auto">
-        <header className="mb-8 text-center text-white">
-          <h2 className="text-3xl font-bold">New Release Books</h2>
-          <p className="text-sm uppercase tracking-wider mt-2">Some quality items</p>
+    <div className="newReleaseSection">
+      <div className="container">
+        <header className="newReleaseHeader">
+          <h2 className="title">New Release Books</h2>
+          <p className="subtitle">Some quality items</p>
         </header>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="booksGrid">
           {books.map((book) => (
-            <div key={book.id} className="flex flex-col items-center text-center">
+            <div key={book.id} className="bookCard">
               <img
                 src={book.image}
                 alt={book.title}
-                className="rounded-lg mb-4 object-cover w-full h-64"
+                className="bookImage"
               />
-              <h3 className="text-xl font-semibold text-white mb-1">{book.title}</h3>
-              <p className="text-gray-400">{book.author}</p>
-              <p className="text-lg font-bold text-white">{book.price}</p>
+              <h3 className="bookTitle">{book.title}</h3>
+              <p className="bookAuthor">{book.author}</p>
+              <p className="bookPrice">{book.price}</p>
             </div>
           ))}
         </div>
-        <div className="flex justify-center mt-8">
-          <button className="bg-[#A92929] text-white py-3 px-6 rounded-lg hover:bg-opacity-90 transition">
+        <div className="actionButtonWrapper">
+          <button className="actionButton">
             Ver Todos Produtos →
           </button>
         </div>

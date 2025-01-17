@@ -1,0 +1,14 @@
+/* Cor personalizada para o container */
+.footerContainer {
+    @apply bg-[#360101] text-white py-4;
+  }
+  
+  /* Estilos internos do footer */
+  .footerContent {
+    @apply container mx-auto px-6 flex flex-col items-center justify-center text-center;
+  }
+  
+  /* Texto do footer */
+  .footerText {
+    @apply text-sm mb-2;
+  }
