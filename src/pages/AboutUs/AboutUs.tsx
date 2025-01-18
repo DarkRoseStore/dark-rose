@@ -56,10 +56,10 @@ const AboutUs: React.FC = () => {
     <div className="aboutContainer">
       <h2 className="aboutTitle">Quem Somos Nós 👭</h2>
       <p className="aboutDescription">
-      Dark Rose: Desvendando a magia dentro da escuridão. Venha descobrir nosso mundo!
+      Aqui, você encontra uma seleção cuidadosa de obras que vão de clássicos atemporais a lançamentos imperdíveis, tudo em um só lugar. Nossa missão é proporcionar uma experiência única para os amantes da leitura, com títulos que tocam a alma, exploram novos mundos e despertam a imaginação.
       </p>
       <p className="aboutDescription">
-      Catálogo exclusivo com qualidade e preços acessíveis. Boa leitura! 🌹📚
+      Seja você um fã de ficção, fantasia, mistério ou romance, na Dark Rose temos algo para cada gosto. Navegue por nosso catálogo e embarque em uma jornada literária inesquecível. Boa leitura! 🌹📚
       </p>
       <h3 className="teamTitle">Conheça Nossa Equipe</h3>
       <div className="teamGrid">
