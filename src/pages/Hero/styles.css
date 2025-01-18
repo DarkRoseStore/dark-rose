@@ -1,5 +1,5 @@
 .heroContainer {
-    @apply bg-cover bg-center w-full h-[80vh] flex;
+    @apply bg-cover bg-center w-full h-[70vh] flex;
 
     background-image: url('../../assets/images/background_hero.jpg');
     background-attachment: fixed;

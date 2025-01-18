@@ -1,6 +1,5 @@
 import Hero from "./pages/Hero/Hero";
-import Products from "./pages/Products/Products";
-import Categories from "./pages/Categories/Categories";
+import News from "./pages/News/News";
 import NewReleaseBooks from "./pages/NewReleaseBooks/NewReleaseBooks";
 import Contact from "./pages/Contact/Contact";
 import AboutUs from './pages/AboutUs/AboutUs';
@@ -10,8 +9,9 @@ export function App() {
   return (
       <>
         <Hero />
-        <Categories />
-        <Products />
+        <hr className="absolute w-full" />
+        <News />
+        <hr className="absolute w-full" />
         <NewReleaseBooks />
         <Contact />
         <AboutUs />

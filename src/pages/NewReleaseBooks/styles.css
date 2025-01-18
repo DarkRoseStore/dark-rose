@@ -10,7 +10,7 @@
 
 /* Cabeçalho */
 .newReleaseHeader {
-  @apply mb-8 text-center text-white;
+  @apply mb-8 text-left text-white;
 }
 
 .newReleaseHeader .title {
@@ -21,20 +21,31 @@
   @apply text-sm uppercase tracking-wider mt-2;
 }
 
+/* Estilo para o título da página */
+.pageTitle {
+  @apply text-3xl font-bold text-white mb-4 text-left; 
+}
+
 /* Carrossel de livros */
 .booksCarousel {
   @apply flex items-center justify-between;
-  position: relative; /* Para posicionamento dos botões */
+  position: relative;
 }
 
 /* Cartões de livros */
 .bookCard {
-  @apply flex flex-col items-center text-center;
-  @apply w-64 h-80; /* Definindo um tamanho fixo */
+  flex: 0 0 300px;
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease; 
+}
+
+.bookCard:hover {
+  transform: scale(1.05);
 }
 
 .bookImage {
-  @apply rounded-lg mb-4 object-cover w-full h-48; /* Mantendo a altura da imagem fixa */
+  @apply rounded-lg mb-4 object-cover w-full h-96; 
 }
 
 .bookTitle {
@@ -48,6 +59,7 @@
 .bookPrice {
   @apply text-lg font-bold text-white;
 }
+
 
 /* Botões de navegação */
 .navButton {
@@ -67,14 +79,15 @@
   @apply bg-white;
 }
 
-/* Grid de livros */
 .booksGrid {
-  @apply hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-6; /* Grid apenas em dispositivos maiores */
+  display: flex;
+  gap: 16px;
+  justify-content: center;
 }
 
 /* Botão de ação */
 .actionButtonWrapper {
-  @apply flex justify-center mt-8;
+  @apply flex justify-center mt-6;
 }
 
 .actionButton {

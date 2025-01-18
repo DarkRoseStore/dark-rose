@@ -20,7 +20,7 @@ const Contact = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://wa.me/your-number"
+            href="https://wa.me/5521974576027"
             target="_blank"
             rel="noopener noreferrer"
             className="icon whatsapp"

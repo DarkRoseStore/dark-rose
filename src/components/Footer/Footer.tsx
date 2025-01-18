@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footerContainer">
       <div className="footerContent">
         <p className="footerText">
-          &copy; 2024 - Dark Rose. Todos os direitos reservados.
+          &copy; 2025 - Dark Rose. Todos os direitos reservados.
         </p>
       </div>
     </footer>
