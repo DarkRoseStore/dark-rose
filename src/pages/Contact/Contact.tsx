@@ -12,7 +12,7 @@ const Contact = () => {
         <h1 className="contactTitle">Entre em contato com a gente 🌹</h1>
         <div className="contactIcons">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/darkrose02025"
             target="_blank"
             rel="noopener noreferrer"
             className="icon instagram"
