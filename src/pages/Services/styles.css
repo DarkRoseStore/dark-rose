@@ -1,45 +1,79 @@
+/* Estilos principais (Desktop mantém o padrão) */
 
+/* Botões de navegação */
 .navButton {
-    @apply bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition duration-200;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
+  @apply bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition duration-200;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container de serviços */
+.serviceContainer {
+  @apply w-full p-8 bg-black text-white;
+}
+
+/* Cabeçalho do serviço */
+.serviceHeader {
+  @apply text-3xl font-bold text-left;
+}
+
+/* Subcabeçalho do serviço */
+.serviceSubHeader {
+  @apply text-lg font-semibold text-left mt-2 mb-4;
+}
+
+/* Conteúdo do serviço */
+.serviceContent {
+  @apply bg-opacity-30 p-4 rounded-lg flex-1 mx-auto max-w-xl;
+}
+
+/* Indicadores */
+.indicatorContainer {
+  @apply flex justify-center mt-4;
+}
+
+.indicatorDot {
+  @apply h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer;
+}
+
+.indicatorDot.active {
+  @apply bg-white;
+}
+
+/* Footer */
+.footer {
+  @apply mt-8 text-center;
+}
+
+.footerLink {
+  @apply text-white underline;
+}
+
+/* Responsividade: ajustes apenas para dispositivos móveis */
+@media (max-width: 768px) {
+  /* Container de serviços */
   .serviceContainer {
-    @apply w-full p-8 bg-black text-white;
+    @apply p-4; /* Reduz apenas o padding no mobile */
   }
-  
+
+  /* Cabeçalhos no mobile */
   .serviceHeader {
-    @apply text-3xl font-bold text-left;
+    @apply text-2xl; /* Reduz o tamanho da fonte */
   }
-  
+
   .serviceSubHeader {
-    @apply text-lg font-semibold text-left mt-2 mb-4;
+    @apply text-base; /* Texto menor para se adaptar melhor */
   }
-  
+
+  /* Conteúdo de serviço no mobile */
   .serviceContent {
-    @apply bg-opacity-30 p-4 rounded-lg flex-1 mx-auto max-w-xl;
+    max-width: 100%; /* Garante que o conteúdo ocupe uma largura máxima fixa */
   }
-  
-  .indicatorContainer {
-    @apply flex justify-center mt-4;
-  }
-  
-  .indicatorDot {
-    @apply h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer;
-  }
-  
-  .indicatorDot.active {
-    @apply bg-white;
-  }
-  
+
+  /* Footer */
   .footer {
-    @apply mt-8 text-center;
+    @apply text-sm; /* Diminui o tamanho do texto do rodapé no mobile */
   }
-  
-  .footerLink {
-    @apply text-white underline;
-  }
-  
+}

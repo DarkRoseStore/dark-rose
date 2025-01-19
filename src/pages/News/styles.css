@@ -30,7 +30,7 @@
 
 .newsImage {
   /* Mobile: Quadrado médio com padding */
-  @apply w-64 h-64 p-2 rounded-lg object-cover shadow-lg; 
+  @apply w-64 h-52 p-2 rounded-lg object-cover shadow-lg; 
   
   /* Desktop: Imagem esticada */
   @apply md:w-2/3 md:h-72; 
