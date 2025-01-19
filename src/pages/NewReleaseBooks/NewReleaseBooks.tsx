@@ -104,9 +104,10 @@ const NewReleaseBooks = () => {
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex - booksPerPage < 0 ? books.length - booksPerPage : prevIndex - booksPerPage
-    );
+    setCurrentIndex((prevIndex) => {
+      const newIndex = prevIndex - booksPerPage;
+      return newIndex < 0 ? books.length - (books.length % booksPerPage || booksPerPage) : newIndex;
+    });
   };
 
   const handleBookClick = (book: Book) => {

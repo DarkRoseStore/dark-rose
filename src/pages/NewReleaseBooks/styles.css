@@ -59,15 +59,14 @@
 .bookPrice {
   @apply text-lg font-bold text-white;
 }
-
+  
 /* Botões de navegação */
 .navButton {
-  @apply bg-white/80 text-[#A92929] p-2 rounded-full hover:bg-white transition;
-  width: 40px; /* Ajusta o tamanho para torná-las mais visíveis */
-  height: 40px; /* Garantindo o formato circular */
+  @apply bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition duration-200;
+  width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centraliza o ícone na seta */
+  justify-content: center;
 }
 
 /* Indicadores */
@@ -101,16 +100,16 @@
 /* Responsividade */
 @media (max-width: 768px) {
   .bookCard {
-    flex: 0 0 90%; /* Reduz a largura dos cards */
+    flex: 0 0 90%; 
     max-width: 90%;
   }
 
   .bookImage {
-    height: 300px; /* Reduz a altura das imagens no mobile */
+    height: 300px; 
   }
 
   .navButton {
-    width: 35px; /* Botões menores em dispositivos móveis */
+    width: 35px; 
     height: 35px;
   }
 }

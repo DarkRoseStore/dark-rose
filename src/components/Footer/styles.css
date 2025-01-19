@@ -1,14 +1,24 @@
 /* Cor personalizada para o container */
 .footerContainer {
-    @apply bg-[#360101] text-white py-4;
-  }
-  
-  /* Estilos internos do footer */
-  .footerContent {
-    @apply container mx-auto px-6 flex flex-col items-center justify-center text-center;
-  }
-  
-  /* Texto do footer */
-  .footerText {
-    @apply text-sm mb-2;
-  }
+  @apply bg-[#360101] text-white py-4;
+}
+
+/* Estilos internos do footer */
+.footerContent {
+  @apply container mx-auto px-6 flex flex-col md:flex-row items-center justify-center text-center md:justify-between; /* Muda para linha no desktop */
+}
+
+/* Texto do footer */
+.footerText {
+  @apply text-sm mb-2 md:mb-0; /* Remove a margem inferior em dispositivos maiores */
+}
+
+/* CNPJ */
+.cnpjText {
+  @apply text-sm mb-2 md:mb-0; /* Remove a margem inferior em dispositivos maiores */
+}
+
+/* Imagem de Garantia de Qualidade */
+.qualityImage {
+  @apply w-24 h-auto; /* Define um tamanho fixo para a imagem */
+}

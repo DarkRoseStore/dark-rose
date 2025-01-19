@@ -1,0 +1,45 @@
+
+.navButton {
+    @apply bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition duration-200;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .serviceContainer {
+    @apply w-full p-8 bg-black text-white;
+  }
+  
+  .serviceHeader {
+    @apply text-3xl font-bold text-left;
+  }
+  
+  .serviceSubHeader {
+    @apply text-lg font-semibold text-left mt-2 mb-4;
+  }
+  
+  .serviceContent {
+    @apply bg-opacity-30 p-4 rounded-lg flex-1 mx-auto max-w-xl;
+  }
+  
+  .indicatorContainer {
+    @apply flex justify-center mt-4;
+  }
+  
+  .indicatorDot {
+    @apply h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer;
+  }
+  
+  .indicatorDot.active {
+    @apply bg-white;
+  }
+  
+  .footer {
+    @apply mt-8 text-center;
+  }
+  
+  .footerLink {
+    @apply text-white underline;
+  }
+  
