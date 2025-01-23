@@ -45,7 +45,7 @@
 /* Ajuste de texto para dispositivos móveis */
 @media (max-width: 768px) {
   .newsTitle {
-    @apply text-xl mb-4; /* Ajuste o tamanho e adicione margem inferior */
+    @apply text-xl; /* Ajuste o tamanho e adicione margem inferior */
   }
 
   .newsContent {
