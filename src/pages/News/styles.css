@@ -1,6 +1,6 @@
 /* Seção principal */
 .newsSection {
-  @apply w-full p-4 md:p-8 bg-[#92A8D1] text-[#6B5B95]; 
+  @apply w-full p-2 md:p-8 bg-[#92A8D1]; /* Reduz o padding no mobile */
 }
 
 /* Container das notícias */
@@ -11,7 +11,7 @@
 /* Botões de navegação */
 .navNewsButton {
   @apply bg-[#A7D397] text-[#F2E9DC] p-2 rounded-md hover:bg-green-800 transition duration-200; 
-  @apply w-10 m-1 flex items-center justify-center;
+  @apply w-10 m-0.5; /* Ajusta a margem para que os botões fiquem mais próximos */
 }
 
 /* Conteúdo da notícia */
