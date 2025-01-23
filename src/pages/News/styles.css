@@ -42,6 +42,18 @@
   @apply text-base font-semibold md:text-lg max-w-xl md:max-w-3xl;
 }
 
+/* Ajuste de texto para dispositivos móveis */
+@media (max-width: 768px) {
+  .newsTitle {
+    @apply text-xl mb-4; /* Ajuste o tamanho e adicione margem inferior */
+  }
+
+  .newsContent {
+    @apply text-sm mb-4; /* Reduza o tamanho do texto e adicione margem inferior */
+  }
+}
+
+/* Indicadores */
 .indicatorNewsContainer {
   @apply flex justify-center mt-4 md:mt-6 gap-2;
   @apply absolute bottom-4 left-1/2 transform -translate-x-1/2; 
