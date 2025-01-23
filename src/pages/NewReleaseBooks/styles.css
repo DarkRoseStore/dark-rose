@@ -5,12 +5,12 @@
 
 /* Conteúdo do container com fundo creme */
 .container {
-  @apply mx-auto bg-[#F2E9DC] rounded-lg p-8 shadow-lg; /* Creme Papel Antigo */
+  @apply w-full bg-[#F2E9DC] rounded-lg p-8 shadow-lg; /* Creme Papel Antigo */
 }
 
 /* Cabeçalho */
 .newReleaseHeader {
-  @apply mb-8 text-left text-[#6B5B95]; /* Texto Lilás Profundo */
+  @apply mb-4 text-left text-[#6B5B95]; /* Texto Lilás Profundo */
 }
 
 /* Estilo para o título da página */
@@ -20,7 +20,7 @@
 
 /* Carrossel de livros */
 .booksCarousel {
-  @apply flex items-center justify-between;
+  @apply flex items-center justify-between mb-4; /* Adiciona espaçamento inferior ao carrossel */
   position: relative;
 }
 
@@ -52,7 +52,7 @@
 .bookPrice {
   @apply text-lg font-bold text-[#6B5B95]; /* Texto Lilás Profundo */
 }
-  
+
 /* Botões de navegação */
 .navBooksButton {
   @apply bg-[#A7D397] text-[#F2E9DC] p-2 rounded-md hover:bg-green-800 transition duration-200; /* Verde Vibrante com hover em Azul Nebuloso */
@@ -84,7 +84,7 @@
 
 /* Botão de ação */
 .actionButtonWrapper {
-  @apply flex justify-center mt-6;
+  @apply flex justify-center mt-6 mb-4; /* Adiciona margem inferior ao botão de ação */
 }
 
 .actionButton {
@@ -104,5 +104,9 @@
   .booksGrid {
     flex-direction: column; 
     gap: 20px; 
+  }
+
+  .container {
+    @apply w-full p-4; /* Adiciona padding em todos os lados */
   }
 }
