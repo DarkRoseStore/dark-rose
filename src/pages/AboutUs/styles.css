@@ -1,69 +1,68 @@
 /* Container principal */
 .aboutContainer {
-    @apply bg-black text-white px-8 py-10;
-  }
-  
-  /* Título principal */
-  .aboutTitle {
-    @apply text-4xl font-bold mb-8 text-center;
-  }
-  
-  /* Descrição */
-  .aboutDescription {
-    @apply text-lg mb-4 text-center;
-  }
-  
-  /* Título da equipe */
-  .teamTitle {
-    @apply text-2xl font-semibold mb-6 text-center;
-  }
-  
-  /* Grid da equipe */
-  .teamGrid {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-8;
-  }
-  
-  /* Card da equipe */
-  .teamCard {
-    @apply flex flex-col items-center text-center rounded-lg p-6 shadow-md transition-transform duration-300 ease-in-out;
-  }
-  .teamCard:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Imagem do membro da equipe */
-  .teamImage {
-    @apply w-40 h-60 object-cover rounded-lg mb-4;
-  }
-  
-  /* Nome do membro */
-  .teamName {
-    @apply text-xl font-bold mb-2;
-  }
-  
-  /* Função do membro */
-  .teamRole {
-    @apply text-lg font-medium mb-2;
-  }
-  
-  /* Bio do membro */
-  .teamBio {
-    @apply text-gray-300 mb-4;
-  }
-  
-  /* Links sociais */
-  .socialLinks {
-    @apply flex justify-center space-x-4;
-  }
-  
-  /* Ícones sociais */
-  .socialIcon {
-    @apply text-2xl transition-colors duration-200;
-  }
-  .gmailIcon {
-    @apply text-red-500 hover:text-red-600;
-  }
-  .whatsappIcon {
-    @apply text-green-500 hover:text-green-600;
-  }
-  
+  @apply bg-[#92A8D1] text-[#6B5B95] px-8 py-10; /* Azul Nebuloso e Texto Lilás Profundo */
+}
+
+/* Título principal */
+.aboutTitle {
+  @apply text-4xl font-bold mb-8 text-center text-white; /* Texto branco para destaque */
+}
+
+/* Descrição */
+.aboutDescription {
+  @apply text-lg mb-4 text-center text-[#F2E9DC]; /* Texto em creme para melhor legibilidade */
+}
+
+/* Título da equipe */
+.teamTitle {
+  @apply text-2xl font-semibold mb-6 text-center text-white; /* Texto branco para destaque */
+}
+
+/* Grid da equipe */
+.teamGrid {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-8;
+}
+
+/* Card da equipe */
+.teamCard {
+  @apply flex flex-col items-center text-center rounded-lg p-6 shadow-md transition-transform duration-300 ease-in-out bg-[#F2E9DC]; /* Fundo creme */
+}
+.teamCard:hover {
+  transform: scale(1.05);
+}
+
+/* Imagem do membro da equipe */
+.teamImage {
+  @apply w-40 h-60 object-cover rounded-lg mb-4;
+}
+
+/* Nome do membro */
+.teamName {
+  @apply text-xl font-bold mb-2 text-[#6B5B95]; /* Texto Lilás Profundo */
+}
+
+/* Função do membro */
+.teamRole {
+  @apply text-lg font-medium mb-2 text-[#6B5B95]; /* Texto Lilás Profundo */
+}
+
+/* Bio do membro */
+.teamBio {
+  @apply text-gray-500 mb-4; /* Tom de cinza mais escuro para a bio */
+}
+
+/* Links sociais */
+.socialLinks {
+  @apply flex justify-center space-x-4;
+}
+
+/* Ícones sociais */
+.socialIcon {
+  @apply text-2xl transition-colors duration-200;
+}
+.gmailIcon {
+  @apply text-red-500 hover:text-red-600;
+}
+.whatsappIcon {
+  @apply text-green-500 hover:text-green-600;
+}

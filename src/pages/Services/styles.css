@@ -1,79 +1,83 @@
-/* Estilos principais (Desktop mantém o padrão) */
-
-/* Botões de navegação */
-.navButton {
-  @apply bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition duration-200;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Container de serviços */
+/* Seção principal */
 .serviceContainer {
-  @apply w-full p-8 bg-black text-white;
+  @apply w-full p-2 sm:p-8 bg-[#92A8D1] text-[#6B5B95]; /* Azul Nebuloso */
 }
 
-/* Cabeçalho do serviço */
-.serviceHeader {
-  @apply text-3xl font-bold text-left;
-}
-
-/* Subcabeçalho do serviço */
-.serviceSubHeader {
-  @apply text-lg font-semibold text-left mt-2 mb-4;
-}
-
-/* Conteúdo do serviço */
+/* Container do conteúdo */
 .serviceContent {
-  @apply bg-opacity-30 p-4 rounded-lg flex-1 mx-auto max-w-xl;
+  @apply mx-auto bg-[#F2E9DC] rounded-lg p-8 shadow-lg; /* Creme Papel Antigo */
+}
+
+/* Cabeçalhos */
+.serviceHeader {
+  @apply text-3xl font-bold text-white  mb-4 text-left; /* Texto Lilás Profundo */
+}
+
+.serviceSubHeader {
+  @apply text-lg font-semibold text-white opacity-90 mb-6 text-left;
 }
 
 /* Indicadores */
 .indicatorContainer {
-  @apply flex justify-center mt-4;
+  @apply flex justify-center mt-6 gap-2;
 }
 
 .indicatorDot {
-  @apply h-2 w-2 bg-gray-400 rounded-full mx-1 cursor-pointer;
+  @apply w-3 h-3 rounded-full bg-gray-500 cursor-pointer; /* Cinza */
 }
 
 .indicatorDot.active {
-  @apply bg-white;
+  @apply bg-[#A7D397]; /* Verde Vibrante */
 }
 
-/* Footer */
+/* Botões de navegação */
+.navButton {
+  @apply bg-[#A7D397] text-white p-2 rounded-md hover:bg-green-800 transition duration-200;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+
+/* Rodapé */
 .footer {
-  @apply mt-8 text-center;
+  @apply mt-8 text-center text-white;
 }
 
 .footerLink {
-  @apply text-white underline;
+  @apply text-white underline hover:text-green-800;
 }
 
-/* Responsividade: ajustes apenas para dispositivos móveis */
+/* Responsividade */
 @media (max-width: 768px) {
-  /* Container de serviços */
-  .serviceContainer {
-    @apply p-4; /* Reduz apenas o padding no mobile */
+  .serviceContent {
+    @apply p-4;
   }
 
-  /* Cabeçalhos no mobile */
   .serviceHeader {
-    @apply text-2xl; /* Reduz o tamanho da fonte */
+    @apply text-2xl; /* Reduz o tamanho do cabeçalho no mobile */
   }
 
   .serviceSubHeader {
-    @apply text-base; /* Texto menor para se adaptar melhor */
+    @apply text-base; /* Reduz o tamanho do subtítulo no mobile */
   }
 
-  /* Conteúdo de serviço no mobile */
-  .serviceContent {
-    max-width: 100%; /* Garante que o conteúdo ocupe uma largura máxima fixa */
-  }
-
-  /* Footer */
   .footer {
-    @apply text-sm; /* Diminui o tamanho do texto do rodapé no mobile */
+    @apply text-sm; /* Diminui o tamanho do texto no rodapé */
+  }
+
+  .indicatorContainer {
+    @apply gap-1; /* Reduz o espaçamento entre os indicadores */
+  }
+
+  .indicatorDot {
+    @apply w-2 h-2; /* Diminui o tamanho das bolinhas no mobile */
+  }
+
+  .navButton {
+    width: 32px; /* Reduz a largura dos botões de navegação */
+    height: 32px; /* Garante que o botão também seja menor */
+    margin: 0 0.5rem; /* Ajusta o espaçamento lateral dos botões */
   }
 }

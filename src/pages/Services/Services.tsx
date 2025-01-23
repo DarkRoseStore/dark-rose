@@ -70,34 +70,41 @@ const Services = () => {
   return (
     <div className="serviceContainer">
       <h1 className="serviceHeader">Catálogo de Serviços</h1>
-      <h2 className="serviceSubHeader">Editora Dark Rose</h2>
-
-      <div className="flex items-center justify-between mb-4">
-        <button className="navButton" onClick={prevService}>
-          &#10094;
-        </button>
-        <div className="serviceContent">
-          <h3 className="text-2xl font-semibold text-left">{services[currentIndex].title}</h3>
-          <ul className="list-disc list-inside mt-2 text-left">
-            {services[currentIndex].details.map((detail, index) => (
-              <li key={index}>{detail}</li>
-            ))}
-          </ul>
+      <h2 className="serviceSubHeader">Minhocas Voadoras - Serviços Literários</h2>
+      <div className="serviceContent">
+        <div className="flex items-center justify-between mb-4">
+          <button className="navButton" onClick={prevService}>
+            &#10094;
+          </button>
+          <div>
+            <h3 className="text-2xl font-semibold text-left">
+              {services[currentIndex].title}
+            </h3>
+            <ul className="list-disc list-inside mt-2 text-left">
+              {services[currentIndex].details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+              ))}
+            </ul>
+          </div>
+          <button className="navButton" onClick={nextService}>
+            &#10095;
+          </button>
         </div>
-        <button className="navButton" onClick={nextService}>
-          &#10095;
-        </button>
+
+        {/* Indicadores */}
+        <div className="indicatorContainer">
+          {services.map((_, index) => (
+            <span
+              key={index}
+              className={`indicatorDot ${
+                index === currentIndex ? "active" : ""
+              }`}
+            ></span>
+          ))}
+        </div>
       </div>
 
-      <div className="indicatorContainer">
-        {services.map((_, index) => (
-          <span
-            key={index}
-            className={`indicatorDot ${index === currentIndex ? "active" : ""}`}
-          ></span>
-        ))}
-      </div>
-
+      {/* Rodapé */}
       <footer className="footer">
         <p>
           <strong>Informações Importantes:</strong> Todos os serviços são realizados mediante contrato.
@@ -105,7 +112,6 @@ const Services = () => {
         </p>
         <p>
           <strong>Contato:</strong>
-          📧 <a href="mailto:bissoliray@gmail.com" className="footerLink">bissoliray@gmail.com</a>
           📧 <a href="mailto:autorabadgal@gmail.com" className="footerLink">autorabadgal@gmail.com</a>
         </p>
       </footer>

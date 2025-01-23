@@ -1,6 +1,6 @@
 /* Cor personalizada para o container */
 .footerContainer {
-  @apply bg-[#360101] text-white py-4;
+  @apply bg-[#6B5B95] text-white py-4;
 }
 
 /* Estilos internos do footer */

@@ -5,7 +5,7 @@
   
   /* Conteúdo centralizado */
   .contactContent {
-    @apply text-white text-center;
+    @apply text-black font-bold text-center;
   }
   
   /* Título principal */

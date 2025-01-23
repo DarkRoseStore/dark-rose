@@ -10,11 +10,8 @@ export function App() {
   return (
       <>
         <Hero />
-        <hr className="absolute w-full" />
         <News />
-        <hr className="absolute w-full" />
         <NewReleaseBooks />
-        <hr className="absolute w-full" />
         <Services />
         <Contact />
         <AboutUs />

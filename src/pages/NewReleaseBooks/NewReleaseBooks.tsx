@@ -124,14 +124,10 @@ const NewReleaseBooks = () => {
 
   return (
     <section className="newReleaseSection">
+      <h2 className="pageTitle">Novos Lançamentos</h2>
       <div className="container">
-        <header className="newReleaseHeader">
-          <h2 className="title">Novos Lançamentos</h2>
-          <p className="subtitle">Confira os livros mais recentes</p>
-        </header>
-
         <div className="booksCarousel">
-          <button className="navButton" onClick={prevSlide}>
+          <button className="navBooksButton" onClick={prevSlide}>
             &#10094;
           </button>
           <div className="booksGrid">
@@ -144,17 +140,17 @@ const NewReleaseBooks = () => {
               </div>
             ))}
           </div>
-          <button className="navButton" onClick={nextSlide}>
+          <button className="navBooksButton" onClick={nextSlide}>
             &#10095;
           </button>
         </div>
 
-        <div className="indicatorContainer">
+        <div className="indicatorBooksContainer">
           {Array.from({ length: Math.ceil(books.length / booksPerPage) }).map(
             (_, index) => (
               <span
                 key={index}
-                className={`indicatorDot ${
+                className={`indicatorBooksDot ${
                   index === Math.floor(currentIndex / booksPerPage) ? "active" : ""
                 }`}
               ></span>

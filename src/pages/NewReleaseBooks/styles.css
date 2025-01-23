@@ -1,29 +1,21 @@
 /* Seção principal */
 .newReleaseSection {
-  @apply w-full p-8 bg-black;
+  @apply w-full p-2 sm:p-8 bg-[#92A8D1] text-[#6B5B95]; /* Azul Nebuloso e textos Lilás Profundo */
 }
 
-/* Conteúdo do container */
+/* Conteúdo do container com fundo creme */
 .container {
-  @apply mx-auto;
+  @apply mx-auto bg-[#F2E9DC] rounded-lg p-8 shadow-lg; /* Creme Papel Antigo */
 }
 
 /* Cabeçalho */
 .newReleaseHeader {
-  @apply mb-8 text-left text-white;
-}
-
-.newReleaseHeader .title {
-  @apply text-3xl font-bold;
-}
-
-.newReleaseHeader .subtitle {
-  @apply text-sm uppercase tracking-wider mt-2;
+  @apply mb-8 text-left text-[#6B5B95]; /* Texto Lilás Profundo */
 }
 
 /* Estilo para o título da página */
 .pageTitle {
-  @apply text-3xl font-bold text-white mb-4 text-left; 
+  @apply text-3xl font-bold text-white mb-4 text-left; /* Título principal em Lilás Profundo */
 }
 
 /* Carrossel de livros */
@@ -38,6 +30,7 @@
   max-width: 300px;
   text-align: center;
   transition: transform 0.3s ease; 
+  @apply bg-[#F2E9DC] p-4 rounded-lg shadow-lg; /* Fundo Creme Papel Antigo */
 }
 
 .bookCard:hover {
@@ -45,41 +38,42 @@
 }
 
 .bookImage {
-  @apply rounded-lg mb-4 object-cover w-full h-96; 
+  @apply w-full h-96 p-2 rounded-lg object-cover shadow-lg bg-[#A7D397]; 
 }
 
 .bookTitle {
-  @apply text-xl font-semibold text-white mb-1;
+  @apply text-xl font-semibold text-[#6B5B95] mb-1; /* Texto Lilás Profundo */
 }
 
 .bookAuthor {
-  @apply text-gray-400;
+  @apply text-[#6B5B95] opacity-70; /* Texto Lilás com opacidade */
 }
 
 .bookPrice {
-  @apply text-lg font-bold text-white;
+  @apply text-lg font-bold text-[#6B5B95]; /* Texto Lilás Profundo */
 }
   
 /* Botões de navegação */
-.navButton {
-  @apply bg-gray-800 text-white p-2 rounded-md hover:bg-gray-700 transition duration-200;
+.navBooksButton {
+  @apply bg-[#A7D397] text-[#F2E9DC] p-2 rounded-md hover:bg-green-800 transition duration-200; /* Verde Vibrante com hover em Azul Nebuloso */
   width: 40px;
+  margin: 0 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 /* Indicadores */
-.indicatorContainer {
+.indicatorBooksContainer {
   @apply flex justify-center mt-4 md:mt-6 gap-2;
 }
 
-.indicatorDot {
-  @apply w-3 h-3 rounded-full bg-gray-500;
+.indicatorBooksDot {
+  @apply w-3 h-3 rounded-full bg-gray-500; /* Verde Vibrante */
 }
 
-.indicatorDot.active {
-  @apply bg-white;
+.indicatorBooksDot.active {
+  @apply bg-[#A7D397]; /* Dourado Suave para indicador ativo */
 }
 
 .booksGrid {
@@ -94,22 +88,21 @@
 }
 
 .actionButton {
-  @apply bg-[#A92929] text-white py-3 px-6 rounded-lg hover:bg-opacity-90 transition;
+  @apply bg-[#A7D397] text-white py-3 px-6 rounded-lg hover:bg-green-800 transition;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .bookCard {
-    flex: 0 0 90%; 
-    max-width: 90%;
+    flex: 0 0 100%; 
+    max-width: 100%; 
   }
 
   .bookImage {
-    height: 300px; 
+    @apply w-full h-auto; 
   }
 
-  .navButton {
-    width: 35px; 
-    height: 35px;
+  .booksGrid {
+    flex-direction: column; 
+    gap: 20px; 
   }
 }

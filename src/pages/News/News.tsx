@@ -102,7 +102,7 @@ const News = () => {
       <section className="newsSection">
       <h2 className="pageTitle">Últimas Notícias</h2>
         <div className="newsContainer">
-          <button className="navButton" onClick={prevSlide}>
+          <button className="navNewsButton" onClick={prevSlide}>
             &#10094;
           </button>
           {news.length > 0 ? (
@@ -120,19 +120,19 @@ const News = () => {
           ) : (
             <p>Carregando notícias...</p>
           )}
-          <button className="navButton" onClick={nextSlide}>
+          <button className="navNewsButton" onClick={nextSlide}>
             &#10095;
           </button>
-        </div>
-        <div className="indicatorContainer">
+        <div className="indicatorNewsContainer">
           {news.map((_, index) => (
             <span
               key={index}
-              className={`indicatorDot ${
+              className={`indicatorNewsDot ${
                 index === currentIndex ? "active" : ""
               }`}
             ></span>
           ))}
+        </div>
         </div>
       </section>
 

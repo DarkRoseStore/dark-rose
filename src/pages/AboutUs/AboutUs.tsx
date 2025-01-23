@@ -1,12 +1,9 @@
 import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import "./styles.css";
 
 interface TeamMember {
   name: string;
-  role: string;
-  gmail: string;
   whatsapp: string;
   image: string;
 }
@@ -37,8 +34,6 @@ const AboutUs: React.FC = () => {
 
         const members: TeamMember[] = data.items.map((item: any) => ({
           name: item.fields.name["en-US"],
-          role: item.fields.role["en-US"],
-          gmail: item.fields.gmail["en-US"],
           whatsapp: item.fields.whatsapp["en-US"],
           image: item.fields.image["en-US"],
         }));
@@ -56,10 +51,10 @@ const AboutUs: React.FC = () => {
     <div className="aboutContainer">
       <h2 className="aboutTitle">Quem Somos Nós 👭</h2>
       <p className="aboutDescription">
-      Dark Rose: Desvendando a magia dentro da escuridão. Venha descobrir nosso mundo!
+      Minhocas Voadoras: Dando asas às suas palavras.!
       </p>
       <p className="aboutDescription">
-      Catálogo exclusivo com qualidade e preços acessíveis. Boa leitura. 📚🌹
+      Catálogo exclusivo com qualidade e preços acessíveis. 📚
       </p>
       <h3 className="teamTitle">Conheça Nossa Equipe</h3>
       <div className="teamGrid">
@@ -72,16 +67,7 @@ const AboutUs: React.FC = () => {
                 className="teamImage"
               />
               <h4 className="teamName">{member.name}</h4>
-              <p className="teamRole">{member.role}</p>
               <div className="socialLinks">
-                <a
-                  href={member.gmail}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="socialIcon gmailIcon"
-                >
-                  <SiGmail />
-                </a>
                 <a
                   href={member.whatsapp}
                   target="_blank"

@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="footerContainer">
       <div className="footerContent">
         <p className="footerText">
-          &copy; 2025 - Dark Rose. Todos os direitos reservados.
+          &copy; 2025 - Minhocas Voadoras. Todos os direitos reservados.
         </p>
         <p className="cnpjText">CNPJ: 58.779.070/0001-70</p>
         <img
