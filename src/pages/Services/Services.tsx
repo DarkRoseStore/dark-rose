@@ -1,9 +1,7 @@
-import { useState } from "react";
 import "./styles.css"; 
 
 const Services = () => {
   const handleDownload = () => {
-    // Substitua 'caminho/para/seu/arquivo.pdf' pelo caminho do seu PDF
     window.open('caminho/para/seu/arquivo.pdf', '_blank');
   };
 

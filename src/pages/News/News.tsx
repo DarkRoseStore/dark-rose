@@ -15,7 +15,7 @@ const News = () => {
 
   useEffect(() => {
     const fetchAssets = async () => {
-      const assetsEndpoint = "https://api.contentful.com/spaces/xodxu49ybtek/environments/master/assets"; // Use o ambiente correto
+      const assetsEndpoint = "https://api.contentful.com/spaces/xodxu49ybtek/environments/master/assets";
       try {
         const response = await fetch(assetsEndpoint, {
           method: "GET",
@@ -33,7 +33,7 @@ const News = () => {
         const assetsMap: Record<string, string> = {};
         data.items.forEach((asset: any) => {
           const id = asset.sys.id;
-          const imageUrl = asset.fields.file["en-US"].url; // Ajuste conforme a estrutura do seu JSON
+          const imageUrl = asset.fields.file["en-US"].url; 
           assetsMap[id] = imageUrl;
         });
         setAssetsMap(assetsMap);
@@ -67,7 +67,7 @@ const News = () => {
         const fetchedNews: News[] = data.items.map((item: any) => ({
           id: item.sys.id,
           title: item.fields.title["en-US"],
-          image: assetsMap[item.fields.image["en-US"].sys.id] || '', // Pega a URL do asset
+          image: assetsMap[item.fields.image["en-US"].sys.id] || '', 
           content: item.fields.content["en-US"],
         }));
 
