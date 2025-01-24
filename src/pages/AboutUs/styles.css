@@ -1,68 +1,77 @@
-/* Container principal */
+/* Container Principal */
 .aboutContainer {
-  @apply bg-[#92A8D1] text-[#6B5B95] px-8 py-10; /* Azul Nebuloso e Texto Lilás Profundo */
+  @apply bg-[#92A8D1] text-[#6B5B95] px-8 py-10;
 }
 
-/* Título principal */
+/* Título Principal e Títulos Secundários */
+.aboutTitle,
+.teamTitle {
+  @apply text-center text-[#f2f2f2] font-bold;
+}
+
 .aboutTitle {
-  @apply text-4xl font-bold mb-8 text-center text-white; /* Texto branco para destaque */
+  @apply text-4xl mb-8;
+}
+
+.teamTitle {
+  @apply text-2xl mb-6;
 }
 
 /* Descrição */
 .aboutDescription {
-  @apply text-lg mb-4 text-center text-[#F2E9DC]; /* Texto em creme para melhor legibilidade */
+  @apply text-lg mb-4 text-center text-[#F2E9DC];
 }
 
-/* Título da equipe */
-.teamTitle {
-  @apply text-2xl font-semibold mb-6 text-center text-white; /* Texto branco para destaque */
-}
-
-/* Grid da equipe */
+/* Grid da Equipe */
 .teamGrid {
   @apply grid grid-cols-1 md:grid-cols-3 gap-8;
 }
 
-/* Card da equipe */
+/* Card da Equipe */
 .teamCard {
-  @apply flex flex-col items-center text-center rounded-lg p-6 shadow-md transition-transform duration-300 ease-in-out bg-[#F2E9DC]; /* Fundo creme */
+  @apply flex flex-col items-center text-center rounded-lg p-6 shadow-md bg-[#F2E9DC] transition-transform duration-300 ease-in-out;
 }
 .teamCard:hover {
-  transform: scale(1.05);
+  @apply scale-105;
 }
 
-/* Imagem do membro da equipe */
+/* Imagem do Membro */
 .teamImage {
   @apply w-40 h-60 object-cover rounded-lg mb-4;
 }
 
-/* Nome do membro */
-.teamName {
-  @apply text-xl font-bold mb-2 text-[#6B5B95]; /* Texto Lilás Profundo */
-}
-
-/* Função do membro */
+/* Texto do Card */
+.teamName,
 .teamRole {
-  @apply text-lg font-medium mb-2 text-[#6B5B95]; /* Texto Lilás Profundo */
+  @apply text-[#6B5B95] font-medium;
 }
 
-/* Bio do membro */
+.teamName {
+  @apply text-xl font-bold mb-2;
+}
+
+.teamRole {
+  @apply text-lg mb-2;
+}
+
+/* Bio do Membro */
 .teamBio {
-  @apply text-gray-500 mb-4; /* Tom de cinza mais escuro para a bio */
+  @apply text-gray-500 mb-4;
 }
 
-/* Links sociais */
+/* Links Sociais */
 .socialLinks {
   @apply flex justify-center space-x-4;
 }
 
-/* Ícones sociais */
 .socialIcon {
   @apply text-2xl transition-colors duration-200;
 }
+
 .gmailIcon {
   @apply text-red-500 hover:text-red-600;
 }
+
 .whatsappIcon {
   @apply text-green-500 hover:text-green-600;
 }

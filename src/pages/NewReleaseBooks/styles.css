@@ -1,36 +1,30 @@
-/* Seção principal */
+/* Seção Principal */
 .newReleaseSection {
-  @apply w-full p-2 sm:p-8 bg-[#92A8D1] text-[#6B5B95]; /* Azul Nebuloso e textos Lilás Profundo */
+  @apply w-full p-2 sm:p-8 bg-[#92A8D1] text-[#6B5B95];
 }
 
-/* Conteúdo do container com fundo creme */
+/* Container de conteúdo */
 .container {
-  @apply w-full bg-[#F2E9DC] rounded-lg p-8 shadow-lg; /* Creme Papel Antigo */
+  @apply w-full max-w-screen-lg bg-[#F2E9DC] rounded-lg p-8 shadow-lg mx-auto;
 }
 
-/* Cabeçalho */
+/* Cabeçalhos */
 .newReleaseHeader {
-  @apply mb-4 text-left text-[#6B5B95]; /* Texto Lilás Profundo */
+  @apply mb-4 text-left text-[#6B5B95];
 }
 
-/* Estilo para o título da página */
 .pageTitle {
-  @apply text-3xl font-bold text-white mb-4 text-left; /* Título principal em Lilás Profundo */
+  @apply text-3xl font-bold text-[#f2f2f2] mb-4 text-left;
 }
 
-/* Carrossel de livros */
+/* Carrossel de Livros */
 .booksCarousel {
-  @apply flex items-center justify-between mb-4; /* Adiciona espaçamento inferior ao carrossel */
-  position: relative;
+  @apply flex items-center justify-between mb-4 relative;
 }
 
-/* Cartões de livros */
+/* Cartões de Livros */
 .bookCard {
-  flex: 0 0 300px;
-  max-width: 300px;
-  text-align: center;
-  transition: transform 0.3s ease; 
-  @apply bg-[#F2E9DC] p-4 rounded-lg shadow-lg; /* Fundo Creme Papel Antigo */
+  @apply flex-none w-72 text-center bg-[#F2E9DC] p-4 rounded-lg shadow-lg transition-transform duration-300;
 }
 
 .bookCard:hover {
@@ -38,75 +32,76 @@
 }
 
 .bookImage {
-  @apply w-full h-96 p-2 rounded-lg object-cover shadow-lg bg-[#A7D397]; 
+  @apply w-full h-96 p-2 rounded-lg object-cover shadow-lg bg-[#A7D397];
 }
 
 .bookTitle {
-  @apply text-xl font-semibold text-[#6B5B95] mb-1; /* Texto Lilás Profundo */
+  @apply text-xl font-semibold text-[#6B5B95] mb-1;
+}
+
+.bookAuthor,
+.bookPrice {
+  @apply text-[#6B5B95];
 }
 
 .bookAuthor {
-  @apply text-[#6B5B95] opacity-70; /* Texto Lilás com opacidade */
+  @apply opacity-70;
 }
 
 .bookPrice {
-  @apply text-lg font-bold text-[#6B5B95]; /* Texto Lilás Profundo */
+  @apply text-lg font-bold;
 }
 
-/* Botões de navegação */
+/* Botões de Navegação */
 .navBooksButton {
-  @apply bg-[#A7D397] text-[#F2E9DC] p-2 rounded-md hover:bg-green-800 transition duration-200; /* Verde Vibrante com hover em Azul Nebuloso */
-  width: 40px;
-  margin: 0 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @apply w-10 h-10 bg-[#A7D397] text-[#F2E9DC] rounded-md flex items-center justify-center hover:bg-green-800 transition;
+  margin: 0 1.5rem;
 }
 
-/* Indicadores */
+/* Indicadores do Carrossel */
 .indicatorBooksContainer {
   @apply flex justify-center mt-4 md:mt-6 gap-2;
 }
 
 .indicatorBooksDot {
-  @apply w-3 h-3 rounded-full bg-gray-500; /* Verde Vibrante */
+  @apply w-3 h-3 rounded-full bg-gray-500;
 }
 
 .indicatorBooksDot.active {
-  @apply bg-[#A7D397]; /* Dourado Suave para indicador ativo */
+  @apply bg-[#A7D397];
 }
 
+/* Grid de Livros */
 .booksGrid {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
+  @apply flex gap-4 justify-center;
 }
 
-/* Botão de ação */
+/* Botão de Ação */
 .actionButtonWrapper {
-  @apply flex justify-center mt-6 mb-4; /* Adiciona margem inferior ao botão de ação */
+  @apply flex justify-center mt-6 mb-4;
 }
 
 .actionButton {
   @apply bg-[#A7D397] text-white py-3 px-6 rounded-lg hover:bg-green-800 transition;
 }
 
-@media (max-width: 768px) {
+/* Responsividade */
+@media (max-width: 799px) {
   .bookCard {
-    flex: 0 0 100%; 
-    max-width: 100%; 
+    @apply w-full;
   }
 
   .bookImage {
-    @apply w-full h-auto; 
+    @apply h-60;
   }
 
   .booksGrid {
-    flex-direction: column; 
-    gap: 20px; 
+    @apply flex-col gap-5;
   }
+}
 
-  .container {
-    @apply w-full p-4; /* Adiciona padding em todos os lados */
+@media (max-width: 1023px) and (min-width: 769px) {
+  .navBooksButton {
+    margin: 0 -1rem;
   }
 }

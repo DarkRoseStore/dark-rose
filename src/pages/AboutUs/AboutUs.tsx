@@ -51,7 +51,7 @@ const AboutUs: React.FC = () => {
     <div className="aboutContainer">
       <h2 className="aboutTitle">Quem Somos Nós 👭</h2>
       <p className="aboutDescription">
-      Minhocas Voadoras: Dando asas às suas palavras.!
+      Minhocas Voadoras: Dando asas às suas palavras, raízes aos seus sonhos!
       </p>
       <p className="aboutDescription">
       Catálogo exclusivo com qualidade e preços acessíveis. 📚

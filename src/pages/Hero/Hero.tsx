@@ -5,6 +5,7 @@ const Hero = () => {
     <div className="heroContainer">
       <div className="header">
         <h1 className="headerTitle">Minhocas Voadoras – Serviços Literários</h1>
+        <h2 className="headerSubtitle">Dando asas às suas palavras, raízes aos seus sonhos!</h2>
         <hr className="absolute w-[95vw]" />
       </div>
     </div>

@@ -84,8 +84,10 @@ const NewReleaseBooks = () => {
 
   useEffect(() => {
     const updateBooksPerPage = () => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 799) {
         setBooksPerPage(1); 
+      } else if (window.innerWidth <= 1273) {
+        setBooksPerPage(2); 
       } else {
         setBooksPerPage(3); 
       }
@@ -144,7 +146,6 @@ const NewReleaseBooks = () => {
             &#10095;
           </button>
         </div>
-
         <div className="indicatorBooksContainer">
           {Array.from({ length: Math.ceil(books.length / booksPerPage) }).map(
             (_, index) => (
@@ -157,7 +158,6 @@ const NewReleaseBooks = () => {
             )
           )}
         </div>
-
         <div className="actionButtonWrapper">
           <a href="https://sualoja.myshopify.com/" target="_blank" rel="noopener noreferrer">
             <button className="actionButton">Ver Todos Nossos Livros</button>
