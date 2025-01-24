@@ -24,7 +24,7 @@
 
 /* Cartões de Livros */
 .bookCard {
-  @apply flex-none w-72 text-center bg-[#F2E9DC] p-4 rounded-lg shadow-lg transition-transform duration-300;
+  @apply flex-none w-64 md:w-72 text-center bg-[#F2E9DC] p-4 rounded-lg shadow-lg transition-transform duration-300;
 }
 
 .bookCard:hover {
@@ -32,11 +32,11 @@
 }
 
 .bookImage {
-  @apply w-full h-96 p-2 rounded-lg object-cover shadow-lg bg-[#A7D397];
+  @apply w-full h-48 md:h-96 p-2 rounded-lg object-cover shadow-lg bg-[#A7D397];
 }
 
 .bookTitle {
-  @apply text-xl font-semibold text-[#6B5B95] mb-1;
+  @apply text-lg md:text-xl font-semibold text-[#6B5B95] mb-1;
 }
 
 .bookAuthor,
@@ -73,7 +73,7 @@
 
 /* Grid de Livros */
 .booksGrid {
-  @apply flex gap-4 justify-center;
+  @apply flex flex-wrap gap-4 justify-center;
 }
 
 /* Botão de Ação */
@@ -88,15 +88,23 @@
 /* Responsividade */
 @media (max-width: 799px) {
   .bookCard {
-    @apply w-full;
+    @apply w-full mx-auto;
   }
 
   .bookImage {
-    @apply h-60;
+    @apply h-40; 
   }
 
   .booksGrid {
     @apply flex-col gap-5;
+  }
+
+  .bookTitle {
+    @apply text-base; 
+  }
+
+  .bookPrice {
+    @apply text-base; 
   }
 }
 
