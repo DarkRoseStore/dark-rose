@@ -12,7 +12,7 @@ const Contact = () => {
         <h1 className="contactTitle">Entre em contato com a gente 🌹</h1>
         <div className="contactIcons">
           <a
-            href="https://www.instagram.com/darkrose02025"
+            href="https://www.instagram.com/minhocasvoadoras1/"
             target="_blank"
             rel="noopener noreferrer"
             className="icon instagram"
@@ -20,7 +20,7 @@ const Contact = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://wa.me/5521974576027"
+            href="https://wa.me/5521992118888"
             target="_blank"
             rel="noopener noreferrer"
             className="icon whatsapp"
