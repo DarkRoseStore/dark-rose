@@ -14,7 +14,7 @@
 }
 
 .pageTitle {
-  @apply text-3xl font-bold text-[#f2f2f2] mb-4 text-left;
+  @apply text-2xl font-bold text-[#f2f2f2] mb-4 text-left break-words;
 }
 
 /* Carrossel de Livros */
@@ -92,7 +92,7 @@
   }
 
   .bookImage {
-    @apply h-40; 
+    @apply h-40 min-w-28; 
   }
 
   .booksGrid {
@@ -105,6 +105,14 @@
 
   .bookPrice {
     @apply text-base; 
+  }
+  .navBooksButton {
+    @apply w-12 h-12 bg-[#A7D397] text-[#F2E9DC] rounded-md flex items-center justify-center hover:bg-green-800 transition;
+    margin: 0 0.5rem; 
+  }
+
+  .booksCarousel {
+    @apply flex items-center justify-between gap-2; 
   }
 }
 
