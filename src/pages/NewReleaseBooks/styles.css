@@ -107,7 +107,7 @@
     @apply text-base; 
   }
   .navBooksButton {
-    @apply w-12 h-12 bg-[#A7D397] text-[#F2E9DC] rounded-md flex items-center justify-center hover:bg-green-800 transition;
+    @apply min-w-8 h-10 bg-[#A7D397] text-[#F2E9DC] rounded-md flex items-center justify-center hover:bg-green-800 transition;
     margin: 0 0.5rem; 
   }
 
